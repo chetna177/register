@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sociallinks{
+    height: 5vh;
+    width: 100vw;
+    background-color: #1C4670;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+.sociallinks #links{
+    display: flex;
+  
+    position: absolute;
+    right: 150px;
+    column-gap: 10px;
+   
+
+}
+
+.sociallinks #links #email{
+    border-right: 1px solid white ;
+    padding-right: 5px;
+}
+
+.sociallinks #links #phoneno{
+    border-right: 1px solid white ;
+    padding-right: 5px;
+}
+.sociallinks #icons {
+    /* border-right:  1px solid white; */
+    display: flex;
+    justify-content: space-around;
+    column-gap: 5px;
+    position: absolute;
+    right: 40px;
+}
+
