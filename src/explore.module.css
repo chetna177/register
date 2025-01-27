@@ -14,6 +14,7 @@
     align-items: center;
     row-gap: 100px;
     margin: 10px 50px;
+    position: relative;
     /* background-color: rgba(229, 226, 223, 1); */
   }
    
@@ -99,3 +100,56 @@
   #greyborder{
     border-right: 4px solid rgb(202, 199, 199);
   }
+
+  .move1{
+    height: 40px;
+    width: 10px;
+    background-color: rgb(180, 29, 29);
+    border: 1px solid rgb(180, 29, 29);
+    position: absolute;
+    bottom: 718px;
+    left: 530px;
+  }
+
+  .move2{
+    height: 40px;
+    width: 10px;
+    background-color: rgb(180, 29, 29);
+    border: 1px solid rgb(180, 29, 29);
+    position: absolute;
+    bottom: 390px;
+    left: 530px;
+
+  }
+  .move3{
+    height: 40px;
+    width: 10px;
+    background-color:rgb(180, 29, 29);
+    border: 1px solid rgb(180, 29, 29);
+    position: absolute;
+    bottom: 150px;
+    right: 533px;
+  }
+  .move4{
+    height: 40px;
+    width: 10px;
+    background-color: rgb(180, 29, 29);
+    border: 1px solid rgb(180, 29, 29);
+    position: absolute;
+    bottom: 508px;
+    right: 533px;
+  }
+
+  .exploreSection:hover .move1{
+     transform: translateY(200px);
+  }
+
+  .exploreSection:hover .move2{
+    transform: translateY(230px);
+ }
+ .exploreSection:hover .move3{
+  transform: translateY(-230px);
+}
+.exploreSection:hover .move4{
+  transform: translateY(-220px);
+}

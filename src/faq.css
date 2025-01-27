@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+.questions{
+    height: 100vh;
+    width: 100vw;
+    /* border: 1px solid grey; */
+    margin: 50px auto ;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: white;
+    
+  
+  }
+  
+  
+  .questions .title{
+    text-align: center;
+    margin: 20px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .title :first-child{
+    color:  rgba(235, 141, 21, 1);
+  }
+  .questions .sectioncenter{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .questions .sectioncenter .question{
+    position: relative;
+    /* border-left: 1px solid red; */
+    height: 10vh;
+    width: 80vw;
+    border-radius: 10px;
+    box-shadow: 5px 3px 2px grey,0px -4px 9px grey;
+    z-index: 1;
+    
+  
+  }
+
+  .question::after{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 99%;
+    width: 7px;
+    border-radius: 11px;
+    content: " ";
+    background: linear-gradient( rgba(235, 141, 21, 1), rgba(28, 70, 112, 1));
+    background-size: contain;
+    z-index: 1;
+  }
+  
+  .questions .sectioncenter .question:hover{
+    box-shadow: 2px 2px 3px grey,0px -2px 3px grey;
+    transform: scale(102%);
+
+  }
+  
+  .questions .sectioncenter .question .questiontitle {
+    display: flex;
+    position: relative;
+    padding: 20px;
+    font-size: larger;
+    font-weight: bold;
+  
+  }
+  .rotate{
+    transform: rotate(90deg)
+  }
+  
+  /* hide text */
+  .questiontext{
+    display: none;
+   
+    
+  }
+  
+  .showtext{
+    /* height: 100%;
+    width: 100%; */
+    display: block;
+    /* background-color: grey; */
+    box-shadow: 2px 2px 3px grey;
+    margin-bottom: 60px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    bottom: 20px;
+    padding: 10px;
+
+
+  }
+
+  .showtext::after{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 99%;
+    width: 7px;
+    border-radius: 11px;
+    content: " ";
+    background: linear-gradient( rgba(235, 141, 21, 1), rgba(28, 70, 112, 1));
+    background-size: contain;
+    z-index: 1;
+  }
+  
+  
+  
+  .questions .sectioncenter .question .questiontitle i{
+    position: absolute;
+    right: 10px;
+  
+  }
+
+  .bottom button{
+    height: 52px;
+    width:162px;
+    color: white;
+    background-color: rgba(28, 70, 112, 1);
+    border-radius: 5px;
+    border: solid rgba(28, 70, 112, 1);
+    position: relative;
+    top: 40px;
+  }

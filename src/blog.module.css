@@ -52,8 +52,12 @@
     width: 384px;
     line-height: 21px;
     /* border: grey solid; */
+    /* transition: transform 2s ease-in; */
 }
 
+.box:hover{
+  transform: translateY(-10px)
+}
 .btn{
   
     display: flex;

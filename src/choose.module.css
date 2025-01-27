@@ -111,3 +111,6 @@
   color: rgba(244, 92, 32, 1);
 }
 
+.box:hover{
+   transform: scale(1.1,1.1);
+}

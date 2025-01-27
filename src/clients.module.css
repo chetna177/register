@@ -43,9 +43,9 @@
 .clientSection .background{
       height: 407px;
       width: 100vw;
-      background-image: url();
-      background-repeat: no-repeat;
       position: relative;
+      display: flex;
+
 }
 
 .background img{
@@ -65,7 +65,11 @@
     right: 700px;
 
 }
-
+.background img{
+    height: 100px;
+    width: 150px;
+    /* border: 1px solid red; */
+}
 .fee{
     margin-top: 20px;
     height: 154px;
@@ -108,4 +112,102 @@
     width: 50px;
     border-radius: 50%;
     background-color: grey;
+}
+
+.background .icon1 img{
+    position: relative;
+    left: 10px;
+    animation: rotate 5s linear  infinite;
+}
+
+.background .icon5 img{
+    position: relative;
+    left: 50px;
+    top: 200px;
+    animation: rotate 5s linear  infinite;
+}
+.background .icon6 img{
+    position: relative;
+    top: 70px;
+    right: 50px;
+    animation: rotate 5s linear  infinite;
+}
+.background .icon7 img{
+    position: relative;
+    left: 10px;
+    top: 100px;
+    animation: rotate1 5s linear  infinite;
+}
+.background .icon8 img{
+    position: relative;
+    top: 200px;
+    left: 10px;
+    animation: rotate 5s linear  infinite;
+}
+.background .icon9 img{
+    position: relative;
+    right: 10px;
+    top: 210px;
+    animation: rotate1 5s linear  infinite;
+}
+.background .icon10 img{
+    position: relative;
+    right: 200px;
+    animation: rotate 5s linear  infinite;
+}
+.background .icon11 img{
+    position: relative;
+    right: 900px;
+    animation: rotate1 5s linear  infinite;
+}
+.background .icon12 img{
+    position: relative;
+    right: 500px;
+    animation: rotate 5s linear  infinite;
+}
+.background .icon4 img{
+    position: relative;
+    top: 240px;
+    left: 10px;
+    animation: rotate1 5s linear  infinite;
+}
+
+.background .icon3 img{
+    position: relative;
+    top: 50px;
+    left: 10px;
+
+    animation: rotate 5s linear  infinite;
+}
+
+.background .icon2 img{
+    position: relative;
+    top: 200px ;
+    left: 20px;
+    animation: rotate1 5s linear  infinite;
+}
+
+@keyframes rotate{
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(50px,70px);
+    }
+    100%{
+        transform: translate(20px,-40px);
+    }
+   
+}
+
+@keyframes rotate1{
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(100px,70px);
+    }
+    100%{
+        transform: translate(20px,-40px);
+    }
 }

@@ -1,48 +1,127 @@
 import React from "react";
-import { useState,useRef,useEffect } from "react";
+import style from "./faq.module.css";
+import { MDBAccordion, MDBAccordionItem, MDBContainer } from "mdb-react-ui-kit";
+import "./faq.css";
 const FAQ = () => {
-  const [active, setActive] = useState(false);
+       
 
-  const contentRef = useRef(null);
+    const [classname, setClassName] = React.useState("questiontext");
 
-  useEffect(() => {
-    contentRef.current.style.maxHeight = active
-      ? `${contentRef.current.scrollHeight}px`
-      : "0px";
-  }, [contentRef, active]);
+      
 
-  const toggleAccordion = () => {
-    setActive(!active);
-  };
+
+
   return (
     <>
-      <div className="App">
-        <div>
-          <button
-            className={`question-section ${active}`}
-            onClick={toggleAccordion}
-          >
-            <div>
-              <div className="question-align">
-                <h4 className="question-style">
-                  Why do you like web developemnt
-                </h4>
-                <FiPlus
-                  className={active ? `question-icon rotate` : `question-icon`}
-                />
-              </div>
-              <div
-                ref={contentRef}
-                className={active ? `answer answer-divider` : `answer`}
-              >
-                <p>Because I love coding</p>
-              </div>
-            </div>
-          </button>
+      
+    <section className="questions">
+      
+        <div className="title">
+            <h2>FAQ</h2>
+            <h2>Frequently Ask Questions</h2>
         </div>
-      </div>
+        <div className="sectioncenter">
+            
+            <article className="question" onClick={() =>
+                     
+                     setClassName("showtext")}>
+                <div className="questiontitle">
+                    <p>Can I recover deleted files from desktop with this software?</p>
+                    <i  className="fa-solid fa-chevron-right"></i>
+                </div>
+                <main className = {classname} >
+               
+                    You would not be able to change or modify the number of items once you have already placed an order.
+                    You can place another fresh order with the desired modifications. However, you can change your
+                    shipping preferences in Your Account at any time after placing your order as long as the order
+                    hasn't entered the shipping process yet.
+                </main>
+
+
+            </article>
+
+            <article className="question" onClick={() =>
+                     
+                     setClassName("showtext")}>
+                <div className="questiontitle">
+                    <p>Can I recover deleted files from desktop with this software?</p>
+                    <i  className="fa-solid fa-chevron-right"></i>
+                </div>
+                <main className = {classname} >
+               
+                    You would not be able to change or modify the number of items once you have already placed an order.
+                    You can place another fresh order with the desired modifications. However, you can change your
+                    shipping preferences in Your Account at any time after placing your order as long as the order
+                    hasn't entered the shipping process yet.
+                </main>
+
+
+            </article>
+            <article className="question" onClick={() =>
+                     
+                     setClassName("showtext")}>
+                <div className="questiontitle">
+                    <p>Can I recover deleted files from desktop with this software?</p>
+                    <i  className="fa-solid fa-chevron-right"></i>
+                </div>
+                <main className = {classname} >
+               
+                    You would not be able to change or modify the number of items once you have already placed an order.
+                    You can place another fresh order with the desired modifications. However, you can change your
+                    shipping preferences in Your Account at any time after placing your order as long as the order
+                    hasn't entered the shipping process yet.
+                </main>
+
+
+            </article>
+            <article className="question" onClick={() =>
+                     
+                     setClassName("showtext")}>
+                <div className="questiontitle">
+                    <p>Can I recover deleted files from desktop with this software?</p>
+                    <i  className="fa-solid fa-chevron-right"></i>
+                </div>
+                <main className = {classname} >
+               
+                    You would not be able to change or modify the number of items once you have already placed an order.
+                    You can place another fresh order with the desired modifications. However, you can change your
+                    shipping preferences in Your Account at any time after placing your order as long as the order
+                    hasn't entered the shipping process yet.
+                </main>
+
+
+            </article>
+            <article className="question" onClick={() =>
+                     
+                     setClassName("showtext")}>
+                <div className="questiontitle">
+                    <p>Can I recover deleted files from desktop with this software?</p>
+                    <i  className="fa-solid fa-chevron-right"></i>
+                </div>
+                <main className = {classname} >
+               
+                    You would not be able to change or modify the number of items once you have already placed an order.
+                    You can place another fresh order with the desired modifications. However, you can change your
+                    shipping preferences in Your Account at any time after placing your order as long as the order
+                    hasn't entered the shipping process yet.
+                </main>
+
+
+            </article>           
+          
+        
+        </div>
+          <section className="bottom">
+                <button>Show More  <i class="fa-solid fa-arrow-right"></i></button>
+              </section>
+    </section>
+    
+
+  
     </>
   );
+
+  
 };
 
 export default FAQ;

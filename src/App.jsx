@@ -9,8 +9,11 @@ import Clients from "./Clients";
 import Blog from "./Blogs";
 import React from 'react'
 import FAQ from "./FAQ";
+import Manage from "./Manage";
+import Form from "./Forms"
 import Slide from "./Slide";
 import Footer from "./Footer";
+
 const App = () => {
   return (
     <>
@@ -24,7 +27,11 @@ const App = () => {
       <Clients />
       <Blog />
       <Slide/>
+      <FAQ/>
+      <Manage/>
+      <Form/>
       <Footer/>
+     
     
 
       

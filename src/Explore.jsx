@@ -3,7 +3,10 @@ import styles from "./explore.module.css";
 
 const Explore = () => {
   return (
+    <>
+       
     <div className={styles.exploreSection}>
+    
       <section className={styles.top}>
         <div id={styles.firstitle}>WELCOME TO REGISTERKARO.IN</div>
         <div id={styles.secondtitle}>Explore Our Services</div>
@@ -19,9 +22,10 @@ const Explore = () => {
           </div>
         </div>
         <div className={styles.element} id={styles.greyborder}>
+            
           <i class="fa-solid fa-magnifying-glass"></i>
 
-          <div className={styles.title}> Company Secretarial Services</div>
+          <div className={styles.title} style={{textAlign: "center",position: "relative",right: "50px"}}> Company Secretarial Services</div>
           <div>
             Make data-driven decisions and utilize technology to reach business
             goals.
@@ -72,10 +76,18 @@ const Explore = () => {
           </div>
         </div>
       </section>
+
       <section className={styles.bottom}>
         <button>See All Services</button>
       </section>
+      <section>
+        <div className={styles.move1}></div>
+        <div className={styles.move2}></div>
+        <div className={styles.move3}></div>
+        <div className={styles.move4}></div>
+      </section>
     </div>
+    </>
   );
 };
 

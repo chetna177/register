@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.manageContainer {
+  height: 80vh;
+  width: 99vw;
+  /* border: 1px solid red; */
+  background-color: rgba(28, 70, 112, 1);
+  display: flex;
+
+  align-items: center;
+  column-gap: 20px;
+}
+.content {
+  height: 80%;
+  width: 50%;
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 40px;
+  position: relative;
+  padding: 15px;
+  color: white;
+}
+
+.content .title {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.content .descript {
+  font-size: large;
+  color: rgba(255, 255, 255, 0.774);
+}
+.content .link {
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 20px;
+}
+.content .link button {
+  height: 80px;
+  border: 1px solid greenyellow;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+.content .link button h1 {
+  color: black;
+  background-color: white;
+  font-size: large;
+}
+
+.content .link button i {
+  font-size: xx-large;
+  color: greenyellow;
+}
+.content .link button:hover {
+  background-color: greenyellow;
+}
+
+.content .link button:hover > i {
+  color: white;
+}
+.content .link button:hover h1 {
+  background-color: greenyellow;
+}
+
+.content .link button:hover > h1 {
+  background-color: greenyellow;
+  color: black;
+
+  font-size: large;
+}
+.animation {
+  height: 80%;
+  width: 45%;
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: end;
+}
+
+.animation .anime1{
+    height: 350px;
+    width: 400px;
+    /* border: 1px solid red; */
+    background-image: url(./assets/mobile-1-Cvkn00Uz.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 150px;
+    animation: mobile1 2s infinite;
+    
+}
+
+.animation .anime2{
+    height: 500px;
+    width: 400px;
+    /* border: 1px solid red; */
+    background-image: url(./assets/mobile-2-BLQwjiDa.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: mobile1 2s infinite;
+
+}
+
+
+@keyframes mobile1{
+    0%{
+        transform: translateY(42px);
+        opacity: 0;
+    }
+
+    100%{
+          transform: translateY(-42px);
+          opacity: 1;
+    }
+}
+
+
+.bg{
+    height: 40vh;
+    width: 100vw;
+}
